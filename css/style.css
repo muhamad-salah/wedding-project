@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+
+/******************start header*******************/
+header{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+}
+
+header h1{
+    margin-bottom: 20px;
+}
+header p{
+    margin-bottom: 20px;
+}
+header span{
+    background-color: black;
+    color: white;
+    padding: 5px 7px;
+}
+/******************end header*******************/
+
+
+
+
+/******************start container *******************/
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+    
+    width: 95%;
+    margin: auto;
+    max-width: 1550px;
+}
+
+.box{
+    /* border: solid; */
+    
+    margin: 10px;
+    width: 95%;
+    margin: 10px auto ;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    
+}
+.box img{
+    width: 100%;
+}
+
+@media screen and (max-width:600px){
+    .wraper p{
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px){
+    
+    .box{
+        width: 98%;
+    }
+    .container { 
+        display: flex;
+        flex-direction: row;}
+
+
+        .left{
+            width: 70%;
+            margin: 0 20px 20px 0 ;
+            
+            
+            
+        }
+        .right
+        {
+            width: 30%;
+            
+            
+        }
+
+
+}
+
+/* .left div{
+    height: 600px;
+    
+}
+.right div
+{
+    height: 400px;
+} */
+
+.content{
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background-color:white;
+    height: 100%;
+    width: 100%;
+
+}
+.content h2{
+font-weight: 400;
+font-size: 1.6rem;
+margin-top: 10px;
+}
+.content h3{
+    
+font-weight: 300;
+font-size: 1.2rem;
+margin-top: 10px;
+}
+
+.content span{
+    color:rgba(46, 46, 46, 0.774);
+}
+
+
+.content p{
+    margin: 25px 0;
+    font-size: 15px;
+    text-align: justify;
+    
+}
+.content button{
+    background-color: white;
+    border: solid 1px silver;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+.arrow{
+    font-size: 0.7rem;
+}
+
+.content button:hover{
+    background-color: #c0c0c0;
+    cursor: pointer;
+}
+.wraper{
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+.wraper p{
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.wraper .span0{
+    background-color: black;
+    color:#fff;
+    padding: 3px 8px;
+    margin-left: 7px;
+
+}
+
+.card{
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    margin: 40px 0;
+    
+    
+}
+
+
+
+
+.card .title{
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    
+}
+.card h2{
+    padding: 10px ;
+    font-weight: 300;
+}
+
+.item{
+    padding: 15px 10px ;
+    display: flex;
+
+}
+.card hr{
+    opacity: 0.4;
+}
+
+
+.item img{
+    width: 50px;
+    margin-right: 15px;
+    
+}
+
+.item p:first-child{
+    margin-top: 5px;
+    font-size: 17px;
+
+}
+
+.item p:last-child{
+    margin-top: 3px;
+    font-size: 17px;
+}
+
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+.tags p{
+    background-color:#f1f1f1;
+    margin-right: 5px;
+    padding:7px;
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 13px;
+    padding: 3px 12px;
+    font-weight: 100;
+    color: gray;
+
+    
+}
+.tags p:first-child{
+    background-color: black;
+    color: white;
+   
+}
+/******************end container *******************/
+
+/************************footer************************/
+footer{
+    margin-top: 50px;
+    background-color: rgba(0, 0 ,0   , 0.573);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+
+footer button{
+    background-color: black;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+footer button:hover{
+    background-color: #c0c0c0c0;
+    color: black;
+}
+
+footer div{
+   margin: 20px 0;
+   padding-left: 30px;
+}
+
+footer button:nth-of-type(1){
+
+    opacity: 0.4;
+}
+footer button:nth-of-type(1):hover{
+    background-color: #c0c0c0;
+    color: black;
+    cursor: not-allowed;
+}
+/********************** end footer********************/
